@@ -19,13 +19,12 @@ const Body = () =>{
 
   const fetchData = async() => {
     const data = await fetch(
-      // "https://proxy.cors.sh/
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4089123&lng=77.3177894&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-      // , {
-      //   headers: {
-      //   'x-cors-api-key': 'temp_b63fc4e2b79e4b8bb58b6b24e966c6a7'
-      //   }
-      // }
+      "https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4089123&lng=77.3177894&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      , {
+        headers: {
+        'x-cors-api-key': 'temp_b63fc4e2b79e4b8bb58b6b24e966c6a7'
+        }
+      }
     );
 
       const json = await data.json();
