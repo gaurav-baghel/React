@@ -66,6 +66,11 @@
     margin-left: 20px;
 }
 
+.res-card-container > a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .res-container-heading{
     margin: 10px;
     margin-left: 30px;
@@ -85,10 +90,11 @@
     margin-bottom: 5px;
 }
 
-.res-card > .res-det > .res-name > h3{
+.res-card > .res-det > .res-name > .LinesEllipsis{
     text-align: left;
     margin: 2px;
     font-size: 18px;
+    font-weight: 700;
 }
 
 .res-card > .res-det> .res-area > h4{
@@ -113,7 +119,16 @@
     padding: 5px;
     margin: 10px;
     height: 308px;
-    width: 20%; 
+    max-width: 175px; 
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.shimmer-card{
+    padding: 5px;
+    margin: 10px;
+    height: 308px;
+    width: 20%;
     border-radius: 10px;
     background-color: #f0f0f0;
 }
@@ -146,3 +161,10 @@
     border: 1px solid gray;
     cursor: pointer;
 }
+
+.user-card{
+    border: 2px solid black;
+    max-width: 25%;
+    padding: 5px;
+}
+

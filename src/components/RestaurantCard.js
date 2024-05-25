@@ -9,7 +9,7 @@ const RestaurantCard = (props) => {
   
   
     return(
-      <div className="res-card" >
+      <div className="res-card">
           <img 
            className="res-logo"
            src={CDN_URL+cloudinaryImageId} 
@@ -17,7 +17,13 @@ const RestaurantCard = (props) => {
           />
         <div className="res-det">
           <div className="res-name">
-              <h3>{name}</h3>
+            <LinesEllipsis
+              text={name}
+              maxLine='1'
+              ellipsis='...'
+              trimRight
+              basedOn='letters'
+            />
           </div>
           <div className="res-rating">
             <h3>{avgRating} ⭐</h3>
