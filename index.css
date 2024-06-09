@@ -164,7 +164,19 @@
 
 .user-card{
     border: 2px solid black;
-    max-width: 25%;
+    max-width: 20%;
     padding: 5px;
+   
+}
+
+.user-card > .user-image > img{
+    width: 100px;
+    height: 100px;
+}
+
+.user-card > .user-image {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 30%;
 }
 
