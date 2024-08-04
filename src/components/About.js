@@ -15,11 +15,11 @@ class About  extends React.Component {
     render(){
         console.log("parent render");
         return(
-            <div className="about">
-                <h1>About us</h1>
-                <p>Onifood is a cloud kitchen + food delivery app established and serving since 2023 😊😋</p>
+            <div className="about text-center">
+                <h1 className="font-bold text-lg m-4">About us</h1>
+                <p className="m-4 text-gray-600">Onifood is a cloud kitchen + food delivery app established and serving since 2023 😊😋</p>
                 <div className="about-team">
-                    <h2>Meet the team:</h2>
+                    <h2 className="font-bold">Meet the team</h2>
                     {/* <User name={"Gaurav Baghel*"} position={"Founder & CEO*"} email={"gauravbaghel2k@gmail.com*"} /> */}
                     <br/>
                     <UserClass name={"Gaurav Baghel**"} position={"Founder & CEO**"} email={"gauravbaghel2k@gmail.com**"} />

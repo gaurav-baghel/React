@@ -6,7 +6,7 @@ const User = ({name,position,email}) => {
         <div className="user-card">
             <p>Count: {count}</p>
             <button onClick={()=>{
-                setCount(count+1);
+                setCount(count++);
             }}>Increase count</button>
             <h3>Name: {name}</h3>
             <h3>Position: {position}</h3>
