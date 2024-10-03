@@ -27,7 +27,7 @@ const Body = () => {
       "https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.40980&lng=77.31000&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       , {
         headers: {
-        'x-cors-api-key': 'temp_275ba9b10fb7934aaa883a045bfc22dd'
+        'x-cors-api-key': 'temp_399ba5a544b60d548d0b54983d10d427'
         }
       }
     );
@@ -54,6 +54,7 @@ const Body = () => {
   //Conditional Rendering
   return listOfRestaurants.length === 0 ? (
     <Shimmer />
+
   ) : (
     <div className="body">
       <div className="Search m-4 p-4 flex items-center ml-32">
